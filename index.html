@@ -1,0 +1,34 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./style.css">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<body> 
+    <div class="container-fluid">
+        <div class="row mt-5">
+            <div class="col-4"></div>
+            <div class="col-md-4 mt-5">
+         <div class="todo-app col-4 text-center w-100 ">
+            <h2 style="color: black"  class="d-flex px-5 h2 " > <span class="mt-4 text-center"> To-Do List </span>  <img src="https://img.freepik.com/free-vector/illustration-paper-clipboard_53876-5852.jpg?size=626&ext=jpg&ga=GA1.1.1679889329.1683363409&semt=ais" alt="" class="img-fluid ml-5" > </h2>
+            <div class="row inputbox">
+            <input type="text" id="input-box" placeholder="Enter Your Text" >
+            <button class="btn" onclick="addTask()" >Add</button>
+            </div>
+            <ul id="list-container">
+                <!-- <li class="check">Task 1</li>
+                <li class="">Task 2</li>
+                <li class="">Task 3</li> -->
+            </ul>
+         </div>
+         <div class="col-4"></div>
+         </div>
+         </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

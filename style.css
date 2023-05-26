@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+.container-fluid{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #153677, #4e085f);
+    padding: 10px;
+}
+.todo-app{
+    width: 100%;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+}
+.todo-app img{
+    width: 100px;
+}
+.inputbox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #edeef0;
+    border-radius: 30px;
+    padding-left: 20px;
+}
+.inputbox button{
+    width: 80px;
+}
+.inputbox input{
+    width: 200px;
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-weight: 14px;
+}
+.inputbox .btn{
+    background-color: #ea5555;
+    border-radius: 30px;
+    color: white;
+    font-size: 16px;
+}
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 170px 12px 12px;
+    user-select: none;
+    cursor: pointer;
+
+    position: relative;
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background: url(https://img.freepik.com/free-icon/moon-phase_318-58333.jpg?size=626&ext=jpg&ga=GA1.1.1679889329.1683363409&semt=sph);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: -27px;
+}
+ul li.check{
+    color: #555;
+    text-decoration: line-through;
+}
+ul li.check::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+
+    border-radius: 50%;
+    background: url(https://img.freepik.com/premium-photo/green-check-mark-sign_698953-9194.jpg?size=626&ext=jpg&ga=GA1.2.1679889329.1683363409&semt=ais);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: -27px;
+    
+}
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    color: #555;
+    text-align: center;
+}
+ul li span:hover{
+    background-color: #edeef0;
+    border-radius: 50%;
+}
